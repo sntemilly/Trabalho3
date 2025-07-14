@@ -1,4 +1,4 @@
-const pontos = [
+
   {
     nome: "Bloco A",
     localizacao: "Biblioteca",
@@ -108,4 +108,3 @@ window.onclick = (event) => {
     modal.style.display = "none";
   }
 };
-
