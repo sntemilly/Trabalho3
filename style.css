@@ -1,44 +1,67 @@
+/* Estilo geral */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
   text-align: center;
   padding: 20px;
 }
 
+/* Título principal */
 h1 {
   color: #800000;
+  margin-bottom: 30px;
 }
 
+/* Caixas dos blocos */
 .bloco {
   background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
   width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
+/* Títulos dos blocos */
+.bloco h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Botões */
 button {
-  background-color: #c44;
+  background-color: #800000;
   color: white;
-  padding: 8px 12px;
-  margin: 5px;
   border: none;
+  padding: 10px 16px;
+  margin: 10px 5px;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #a22;
+  background-color: #a00000;
 }
 
+/* Status de disponibilidade */
 .status {
-  display: block;
+  display: inline-block;
+  padding: 6px 12px;
   margin-top: 10px;
-  background-color: #fdd;
-  color: #800;
-  padding: 5px;
-  border-radius: 10px;
+  border-radius: 20px;
   font-weight: bold;
+  font-size: 14px;
+}
+
+/* Cores de status */
+.status.disponivel {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.lotado {
+  background-color: #f8d7da;
+  color: #721c24;
 }
