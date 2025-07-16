@@ -1,38 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Estacionamento de Bicicletas - IFCE</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Estacionamento de Bicicletas - IFCE</h1>
+<h1>Estacionamento de Bicicletas - IFCE</h1>
+<div id="pontos-container"></div>
 
-  <div class="bloco" id="blocoA">
-    <h2>Bloco A</h2>
-    <p><strong>Local:</strong> Biblioteca</p>
-    <p><strong>Capacidade:</strong> 12</p>
-    <p><strong>Bicicletas estacionadas:</strong> <span id="countA">6</span></p>
-    <button onclick="adicionar('A')">Adicionar</button>
-    <button onclick="remover('A')">Remover</button>
-    <span class="status" id="statusA">Disponível</span>
+
+<div id="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="close-modal">&times;</span>
+    <div id="modal-info"></div>
   </div>
+</div>
 
-  <div class="bloco" id="blocoB">
-    <h2>Bloco B</h2>
-    <p><strong>Local:</strong> Restaurante</p>
-    <p><strong>Capacidade:</strong> 8</p>
-    <p><strong>Bicicletas estacionadas:</strong> <span id="countB">3</span></p>
-    <button onclick="adicionar('B')">Adicionar</button>
-    <button onclick="remover('B')">Remover</button>
-    <span class="status" id="statusB">Disponível</span>
-  </div>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
 
-  <script src="script.js"></script>
-
-  <span id="statusB" class="status"></span>
-  <span id="statusA" class="status"></span>
-
-</body>
-</html>
